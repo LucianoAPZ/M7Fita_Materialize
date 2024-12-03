@@ -1,0 +1,38 @@
+/*
+ * ...deixar els continguts que existissin prèviament...
+ */
+ 
+/* body fix: perquè ocupi tota la pantalla */
+html, body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+/*
+* afegir la class tabs-content a cada div de contingut
+* per solucionar el contingut scollable de cada pestanya
+*/
+.tabs-content {
+    height: 100%;
+    overflow-y: scroll !important;
+}
+
+/* NAV*/
+.subheader{
+    font-weight: bold !important;
+}
+
+.sidenav li #perfil{
+    width: 100%;
+    height: 120%;
+    filter: brightness(0.5);
+}
+
+#nav-div{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
