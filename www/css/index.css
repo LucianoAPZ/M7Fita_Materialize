@@ -11,13 +11,33 @@ html, body {
     flex-flow: column;
 }
 
+h3{
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    margin: unset;
+    margin-bottom: 20px;
+    color: #6e351a;
+}
+
+#monster-detail p{
+    font-family: "Charm", cursive;
+    color: #6e351a;
+} 
 /*
 * afegir la class tabs-content a cada div de contingut
 * per solucionar el contingut scollable de cada pestanya
 */
 .tabs-content {
-    height: 100%;
+    height: 100% !important;
     overflow-y: scroll !important;
+}
+
+div#test-swipe-1, div#test-swipe-2 {
+    height: 100%;
+}
+div#test-swipe-2{
+    padding-left: 3%;
+    padding-top: 3%;
 }
 
 /* NAV*/
@@ -31,8 +51,71 @@ html, body {
     filter: brightness(0.5);
 }
 
-#nav-div{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+ul#tabs-swipe-demo {
+    display: flex;
+    align-items: center;
+}
+
+/* tabs */
+.monster-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.monster-list, div#test-swipe-2 {
+    background-color: #c9bb78;
+    list-style-type: none;
+    margin: unset;
+    padding-bottom: 10%;
+}
+
+.monster-list li{
+    width: 33%;
+    display: table;
+    padding-top: 3%;
+}
+
+.monster img{
+    width: 200px;
+}
+
+.monster a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* test2 */
+#monster-detail {
+    display: flex;
+    justify-content: space-around;
+}
+
+#monsterText, #monsterImg{
+    width: 50%;
+}
+
+#monsterImg{
+    display: flex;
+    justify-content: center;
+}
+
+#monsterText h3{
+    font-size: 80px;
+    margin-bottom: 35px;
+}
+
+#monsterText p{
+    font-size: 20px;
+    color: #bf531f;
+}
+
+#monsterText strong{
+    color: #6e351a;
+    font-weight: 700;
+}
+
+#monsterImg img{
+    max-width: unset !important;
+    width: 70% !important;
 }
